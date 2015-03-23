@@ -2,7 +2,7 @@ FROM centos:6
 
 RUN yum update -y && \
     yum install -y java-1.8.0-openjdk && \
-    rpm -ivh http://ci.tuleap.net/yum/tuleap/rhel/6/dev/x86_64/openfire-3.6.4-1.i386.rpm \
+    rpm -ivh http://download.igniterealtime.org/openfire/openfire-3.9.3-1.i386.rpm \
     	     http://ci.tuleap.net/yum/tuleap/rhel/6/dev/x86_64/openfire-tuleap-plugins-3.6.4-1.noarch.rpm
 
 EXPOSE 7070 5222 5223 9090 9091
